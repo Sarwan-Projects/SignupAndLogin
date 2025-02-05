@@ -31,17 +31,17 @@ This is a web application for user authentication, including **sign up**, **logi
 - `Login.jsp`: The login page where users enter their email/username and password.
 - `registration.jsp`: The sign-up page where users can create a new account.
 - `forgotPassword.jsp`: The page where users can request a password reset via OTP.
-- `EnterOtp.jsp`: The page for users to verify their OTP and reset their password.
+- `EnterOtp.jsp`: The page for users to verify their OTP.
 - `index.jsp`: The homepage for authenticated users after login.
-- `newPassword.jsp`: A page that shows errors during login, sign up, or password reset.
+- `newPassword.jsp`: A page to enter new password.
 
 - `src/`: Contains all Java Servlet files.
-  - `ValidateOtp.java`: Handles user login functionality.
+  - `ValidateOtp.java`: Handles OTP verification for resetting the password.
   - `RegistrationServlet.java`: Handles user registration and sign-up validation.
   - `ForgotPassword.java`: Manages OTP generation and email sending for password recovery.
-  - `Logout.java`: Handles OTP verification for resetting the password.
-  - `Login.java`: Allows users to reset their password after OTP verification.
-  - `NewPassword.java`: Displays the user's dashboard after successful login.
+  - `Logout.java`: Clears the session data and logs the user out.
+  - `Login.java`: Handles user login functionality.
+  - `NewPassword.java`: Allows users to reset their password after OTP verification.
 
 - `WEB-INF/`: Contains configuration files like `web.xml` for general settings (like welcome file).
 
